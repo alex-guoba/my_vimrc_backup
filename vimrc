@@ -17,7 +17,8 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'wincent/command-t'
+
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -27,7 +28,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-" for go develop env
+" for go develop env. vim-go requires at least Vim 8.0.1453 or Neovim 0.3.1.
 Plugin 'fatih/vim-go'
 " for markdown
 Plugin 'godlygeek/tabular'
