@@ -33,6 +33,8 @@ Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
+Plugin 'pangloss/vim-javascript'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -174,3 +176,10 @@ if has("autocmd")
 endif
 
 let g:vim_markdown_folding_disabled = 1
+let g:javascript_plugin_jsdoc = 1 "Enables syntax highlighting for JSDocs.
+
+
+" Use new regular expression engine
+set re=0
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+autocmd FileType typescript setlocal ts=2 sts=2 sw=2
