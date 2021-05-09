@@ -174,6 +174,8 @@ set wrap "Wrap lines
 
 if has("autocmd")
     autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+    autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+    autocmd FileType typescript setlocal ts=2 sts=2 sw=2
 endif
 
 let g:vim_markdown_folding_disabled = 1
@@ -182,5 +184,4 @@ let g:javascript_plugin_jsdoc = 1 "Enables syntax highlighting for JSDocs.
 
 " Use new regular expression engine
 set re=0
-autocmd FileType javascript setlocal ts=2 sts=2 sw=2
-autocmd FileType typescript setlocal ts=2 sts=2 sw=2
+
